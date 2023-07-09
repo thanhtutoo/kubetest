@@ -1,11 +1,17 @@
 import { Product } from "@/types";
 
-const URL = `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/products`;
+const URL = `api/products`;
 
-const getProduct = async (id: number): Promise<Product> => {
-  const res = await fetch(`${URL}/${id}`);
+const getProduct = async (id: number): Promise<Product | {}> => {
+  try {
+    const res = await fetch(`${URL}/${id}`);
 
-  return res.json();
+    const product = res.json();
+
+    return product;
+  } catch (error) {
+    return {};
+  }
 };
 
 export default getProduct;
