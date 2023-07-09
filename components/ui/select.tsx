@@ -66,7 +66,7 @@ const Select: React.FC<SelectProps> = ({
         aria-haspopup="true"
         aria-labelledby={id}
         onClick={() => setOpen(!open)}
-        className="mt-1 flex justify-between  w-full py-2 px-3 border capitalize border-gray-300 bg-white min-w-[180px]  rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm cursor-pointer"
+        className="mt-1 flex justify-between  w-full py-2 px-3 border capitalize border-gray-300 bg-white min-w-full md:min-w-[180px]  rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm cursor-pointer"
       >
         {selected}
         {loading && <LoadingSpinner size={15} />}

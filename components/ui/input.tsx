@@ -10,10 +10,10 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     const inputId = `${label.replace(" ", "")}-${type}`;
 
     return (
-      <div>
+      <div className="max-w-[360px] mx-auto w-full">
         <label
           htmlFor={inputId}
-          className="block text-sm font-medium text-gray-700"
+          className="block text-md font-bold text-gray-700"
         >
           {label}
         </label>
