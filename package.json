@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --watch",
+    "test": "./execute.sh",
     "test:ci": "jest --ci",
     "cypress": "cypress open"
   },
